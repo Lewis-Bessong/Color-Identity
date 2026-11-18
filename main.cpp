@@ -2,7 +2,26 @@
 #include <vector>
 #include <string>
 
+class ColorIdentity {
+    public: // Acces alllowed in main code 
 
+        // ==== Color Attributes ====
+
+        // How do i allow more initializer values for colors??
+
+        int red = {255, 0, 0, 255};
+        int blue = {0, 0, 255, 255};
+        int black = {0, 0, 0, 255};
+        int white = {255, 255, 255, 255};
+
+        // Camera Attributes 
+
+        bool IsCameraOn;
+        bool IsCameraOff;
+
+    private: // Access not allowed in main code
+
+};
 
 
 int main () { 
