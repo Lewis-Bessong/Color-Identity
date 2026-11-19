@@ -2,31 +2,31 @@
 #include <vector>
 #include <string>
 
-class ColorIdentity {
+// might need inheritance class?
+
+class ColorDetector {   // system blueprint
+
     public: // Acces alllowed in main code 
 
         // ==== Color Attributes ====
 
-        // How do i allow more initializer values for colors??
 
-        int red = {255, 0, 0, 255};
-        int blue = {0, 0, 255, 255};
-        int black = {0, 0, 0, 255};
-        int white = {255, 255, 255, 255};
-
-        // Camera Attributes 
-
-        bool IsCameraOn;
-        bool IsCameraOff;
+        const int red[4] = {255, 0, 0, 255};
+        const int blue[4] = {0, 0, 255, 255};
+        const int black[4] = {0, 0, 0, 255};
+        const int white[4] = {255, 255, 255, 255};
 
     private: // Access not allowed in main code
 
 };
 
 
+
+
 int main () { 
 
     std::cout << "Hello World" << std::endl;
+
 
     return 0;
 }
